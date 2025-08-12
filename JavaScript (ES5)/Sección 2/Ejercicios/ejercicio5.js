@@ -4,3 +4,20 @@
 // Prueba 'operar' con una suma, una resta y una multiplicación usando funciones anónimas.
 
 // Escribe tu código aquí:
+
+function operar(num1, num2, callback){
+    let resultado = callback(num1, num2);
+    console.log(resultado); //Gracias a esto cuando llamemos las funciones abajo se imprimirán en consola
+}
+
+operar(2,5, function (a,b){
+    return ('La suma es: ', a + b)
+})
+
+operar(2,5, function (a,b){
+    return ('La resta es: ', a - b)
+})
+
+operar(2,5, function (a,b){
+    return ('La multiplicación es: ', a * b)
+})

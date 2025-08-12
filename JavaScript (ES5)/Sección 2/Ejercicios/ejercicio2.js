@@ -4,3 +4,18 @@
 // Llama a 'incrementar' dos veces dentro de la función anónima.
 
 // Escribe tu código aquí:
+
+
+(function(){
+    let contador = 0
+    function incrementar(){
+        contador ++;
+        console.log(contador)
+    }
+
+    incrementar();
+    incrementar();
+    incrementar();
+})();
+
+

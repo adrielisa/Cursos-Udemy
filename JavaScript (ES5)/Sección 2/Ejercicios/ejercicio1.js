@@ -5,9 +5,7 @@
 // Escribe tu código aquí:
 
 function saludar(nombre){
-    console.log("Hola" + nombre);
+    console.log("Hola " + nombre);
 }
 
-console.log(
-    saludar(Adriel)
-)
+saludar("Adriel Isai Rodriguez Pacheco")
