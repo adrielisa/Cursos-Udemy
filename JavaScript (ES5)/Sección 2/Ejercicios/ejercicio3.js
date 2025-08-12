@@ -8,14 +8,15 @@
 function Persona (nombre, edad){
     this.nombre = nombre;
     this.edad = edad;
-
-    const  Presentarse = function (){
-        return(console.log ('Soy ' + nombre + 'y tengo ' + edad))
-    }
-
-    Presentarse()
 } 
+
+Persona.prototype.presentarse = function () {
+        return(console.log ('Soy ' + this.nombre + ' y tengo ' + this.edad))
+}
 
 const Adriel = new Persona ('Adriel', 20)
 const Brissa = new Persona ('Brissa', 16)
 const Jimena = new Persona ('Jimena', 19)
+
+Adriel.presentarse()
+Brissa.presentarse()

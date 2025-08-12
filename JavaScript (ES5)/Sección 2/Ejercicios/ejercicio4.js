@@ -5,17 +5,23 @@
 // Escribe tu código aquí:
 
 
-function Persona (edad){
+function Persona (edad, nombre){
     this.edad = edad
+    this.nombre = nombre
 }
 
-//Duda parati chatgpt, por qué sino pongo el this falla? No me queda claro,
+//Duda para ti chatgpt, por qué sino pongo el this falla? No me queda claro,
 //Ya lo corregí pero me quedo esa duda
 Persona.prototype.cumplirAnios = function(){
+    this.nombre
     this.edad++ //Aquí antes tenía this.edad = this.edad++ y siempre me daba 11 el otuput sin importar cuantas veces llamara la función, por qué?
-    (console.log(this.edad))
+    (console.log( this.nombre +' ha cumplido ' + this.edad))
 }
 
-let Mateo = new Persona(10)
+let Mateo = new Persona(10, 'Mateo')
 Mateo.cumplirAnios()
 Mateo.cumplirAnios()
+
+let Itzel = new Persona(20, 'Brissa')
+Itzel.cumplirAnios()
+Itzel.cumplirAnios()
