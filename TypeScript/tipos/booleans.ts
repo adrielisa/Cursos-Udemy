@@ -7,4 +7,4 @@
     isSuperman = ( isBatman ) ? true: false;
 
     console.log({isSuperman})
-})()
+})() 
