@@ -1,8 +1,12 @@
 "use strict";
-(() => {
-    const fullName = (firstName, ...restArgs) => {
-        return `${firstName} ${restArgs.join(' ')}`;
+(function () {
+    var fullName = function (firstName) {
+        var restArgs = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            restArgs[_i - 1] = arguments[_i];
+        }
+        return "".concat(firstName, " ").concat(restArgs.join(' '));
     };
-    const superman = fullName('Clark', 'Joseph', 'Kent', 'Brissa', 'Itzel', 'Jazmin', 'Daiane', 'Regina', 'Angela');
-    console.log({ superman });
+    var superman = fullName('Clark', 'Joseph', 'Kent', 'Brissa', 'Itzel', 'Jazmin', 'Daiane', 'Regina', 'Angela');
+    console.log({ superman: superman });
 })();

@@ -1,7 +1,7 @@
 "use strict";
-(() => {
+(function () {
     //No tiene un punto alcanzable , por eso se usa never
-    const error = (message) => {
+    var error = function (message) {
         throw new Error(message);
     };
     error('Auxilio');

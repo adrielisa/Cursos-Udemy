@@ -1,10 +1,10 @@
 "use strict";
-(() => {
-    const hero = 'Flash';
+(function () {
+    var hero = 'Flash';
     function returnName() {
         return hero;
     }
-    const activateBatiSignal = () => {
+    var activateBatiSignal = function () {
         return ('BatiSignal Activated!!');
     };
     console.log(activateBatiSignal());

@@ -1,16 +1,16 @@
 "use strict";
-(() => {
+(function () {
     //Le digo que si trae ambos datos los imprima, sino que imprima solo el primer nombre
-    const fullName = (firstName, lastName) => {
+    var fullName = function (firstName, lastName) {
         if (firstName && lastName) {
-            return (`${firstName}, ${lastName}`);
+            return ("".concat(firstName, ", ").concat(lastName));
         }
         else {
-            return (`${firstName}`);
+            return ("".concat(firstName));
         }
     };
-    const name = fullName('Adriel');
-    const name2 = fullName('Adriel', 'Isai');
-    console.log({ name });
-    console.log({ name2 });
+    var name = fullName('Adriel');
+    var name2 = fullName('Adriel', 'Isai');
+    console.log({ name: name });
+    console.log({ name2: name2 });
 })();

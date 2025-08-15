@@ -1,7 +1,7 @@
 "use strict";
-(() => {
-    const batman = 'Batman';
-    const linternaVerde = "Linterna's verde";
-    const volcanNegro = "Héroe: Volcan Negro";
-    console.log(`I'm ${batman}, `);
+(function () {
+    var batman = 'Batman';
+    var linternaVerde = "Linterna's verde";
+    var volcanNegro = "Héroe: Volcan Negro";
+    console.log("I'm ".concat(batman, ", "));
 })();
