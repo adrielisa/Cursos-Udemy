@@ -2,18 +2,18 @@
 (() => {
     const goku = {
         name: 'Son Goku',
-        power: 'Ki'
+        power: 'K'
     };
     const gon = {
         name: 'Gon Freeks',
-        power: 'Nen, Ren, Hatsu'
+        power: ''
     };
     const naruto = {
-        name: 'Naruto Uzumaki',
+        name: 'Naruto Uzumaku ',
         power: 'Chakra'
     };
     const ShonenCharacters = [goku, naruto, gon];
     for (const ShonenCharacter of ShonenCharacters) {
-        console.log('El protagonista ' + ShonenCharacter.name + ' tiene el poder del ' + ShonenCharacter.power);
+        console.log(ShonenCharacter);
     }
-})();
+});

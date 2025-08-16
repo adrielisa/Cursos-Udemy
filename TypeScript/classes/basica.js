@@ -1,16 +1,44 @@
 "use strict";
 (() => {
     class Avenger {
-        name; //Si lo pongo privado no tengo acceso
+        name;
         team;
         realName;
-        static avgAge = 35; //Se pueden consumir accediendo a la clase
+        //private name: string; Las propiedades private solo son accesibles dentro de la misma clase
+        //Las propiedades public son accesibles desde cualquier lugar, es la default
+        //Se pueden consumir accediendo a la clase, pertecencen a esta, no a las instancias
+        //Las propiedades protected son accesibles desde la clase y sus subclases (protected)
+        static avgAge = 35;
+        //Se ejecuta cuando se crea una nueva instancia
         constructor(name, team, realName) {
             this.name = name;
             this.team = team;
             this.realName = realName;
         }
     }
-    const antman = new Avenger('Antman', 'Capitan');
+    const antman = new Avenger('Antman', 'Capitan', 'Scott Lang');
     console.log(antman);
+})();
+(() => {
+    class Avenger {
+        name;
+        team;
+        realName;
+        static avgAge = 35;
+        static getAvgAge() {
+            return this.name; //Accede al NOMBRE de la clase
+        }
+        constructor(name, team, realName) {
+            this.name = name;
+            this.team = team;
+            this.realName = realName;
+        }
+        bio() {
+            return `${this.name} (${this.team})`;
+        }
+    }
+    const antman = new Avenger('Antman', 'Capitan', 'Scott Lang');
+    console.log(antman);
+    console.log(antman.bio());
+    console.log(Avenger.getAvgAge);
 })();
