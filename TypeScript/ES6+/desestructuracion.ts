@@ -29,4 +29,15 @@
 
     printAvenger(avengers)
 
+    // array que sólo aceptará strings
+    const periodosAzulesArr: string[] = ['Yatora', 'Mori', 'Yuka', 'teacher'];
+
+    // Le digo que quiero el primer valor del objeto
+    const [ Yatora ] = periodosAzulesArr
+    console.log({Yatora})
+
+    //Le digo que quiero el tercer valor del objeto
+    const [,,Yuka] = periodosAzulesArr
+    console.log({Yuka})
+
 })();
