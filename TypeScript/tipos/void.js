@@ -1,11 +1,11 @@
 "use strict";
-(function () {
+(() => {
     //Significa que no regresaré nada
     function callBatman() {
         return;
     }
-    var callSuperman = function () {
+    const callSuperman = () => {
     };
-    var a = callBatman();
+    const a = callBatman();
     console.log(a);
 })();

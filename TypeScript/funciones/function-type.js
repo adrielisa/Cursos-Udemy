@@ -1,10 +1,10 @@
 "use strict";
-(function () {
-    var addNumbers = function (a, b) { return a + b; };
-    var greet = function (name) { return "Hola ".concat(name); };
-    var saveTheWorld = function () { return "El mundo est\u00E1 salvado!"; };
+(() => {
+    const addNumbers = (a, b) => a + b;
+    const greet = (name) => `Hola ${name}`;
+    const saveTheWorld = () => `El mundo está salvado!`;
     //Le decimos que myFunction solo aceptará funciones
-    var myFunction;
+    let myFunction;
     myFunction = addNumbers;
     console.log(myFunction(1, 2));
     myFunction = greet;

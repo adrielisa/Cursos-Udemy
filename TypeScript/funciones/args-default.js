@@ -1,10 +1,9 @@
 "use strict";
-(function () {
+(() => {
     //Podemos ponerle valores por defecto
-    var fullName = function (firstName, lastName, upper) {
-        if (upper === void 0) { upper = true; }
-        return "".concat(firstName, " ").concat(lastName || '-----');
+    const fullName = (firstName, lastName, upper = true) => {
+        return `${firstName} ${lastName || '-----'}`;
     };
-    var name = fullName('Tony');
+    const name = fullName('Tony');
     console.log(fullName);
 })();

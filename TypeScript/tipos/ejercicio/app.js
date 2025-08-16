@@ -1,26 +1,26 @@
 "use strict";
-(function () {
+(() => {
     // Tipos
-    var batman = 'Bruce';
-    var superman = 'Clark';
-    var existe = false;
+    const batman = 'Bruce';
+    const superman = 'Clark';
+    const existe = false;
     // Tuplas
-    var parejaHeroes = [batman, superman];
-    var villano = ['Lex Lutor', 5, true];
+    const parejaHeroes = [batman, superman];
+    const villano = ['Lex Lutor', 5, true];
     // Arreglos
-    var aliados = ['Mujer Maravilla', 'Acuaman', 'San', 'Flash'];
+    const aliados = ['Mujer Maravilla', 'Acuaman', 'San', 'Flash'];
     //Enumeraciones
-    var Enumeraciones;
+    let Enumeraciones;
     (function (Enumeraciones) {
         Enumeraciones[Enumeraciones["fuerzaFlash"] = 5] = "fuerzaFlash";
         Enumeraciones[Enumeraciones["fuerzaSuperman"] = 100] = "fuerzaSuperman";
         Enumeraciones[Enumeraciones["fuerzaBatman"] = 1] = "fuerzaBatman";
         Enumeraciones[Enumeraciones["fuerzaAcuaman"] = 0] = "fuerzaAcuaman";
     })(Enumeraciones || (Enumeraciones = {}));
-    var fuerzaFlash = Enumeraciones.fuerzaFlash;
-    var fuerzaSuperman = Enumeraciones.fuerzaSuperman;
-    var fuerzaBatman = Enumeraciones.fuerzaBatman;
-    var fuerzaAcuaman = Enumeraciones.fuerzaAcuaman;
+    const fuerzaFlash = Enumeraciones.fuerzaFlash;
+    const fuerzaSuperman = Enumeraciones.fuerzaSuperman;
+    const fuerzaBatman = Enumeraciones.fuerzaBatman;
+    const fuerzaAcuaman = Enumeraciones.fuerzaAcuaman;
     // Retorno de funciones
     function activar_batiseñal() {
         return 'activada';
@@ -29,7 +29,7 @@
         console.log('Auxilio!!!');
     }
     // Aserciones de Tipo
-    var poder = '100';
-    var largoDelPoder = poder.length;
+    const poder = '100';
+    const largoDelPoder = poder.length;
     console.log(largoDelPoder);
 })();

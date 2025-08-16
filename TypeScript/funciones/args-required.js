@@ -1,9 +1,9 @@
 "use strict";
-(function () {
+(() => {
     //Podemos hacer que se reciban 2 tipos de datos distintos
-    var fullName = function (firstName, lastName) {
-        return "".concat(firstName, " ").concat(lastName);
+    const fullName = (firstName, lastName) => {
+        return `${firstName} ${lastName}`;
     };
-    var name = fullName('Adriel', 'Chan');
-    console.log({ name: name });
+    const name = fullName('Adriel', 'Chan');
+    console.log({ name });
 })();

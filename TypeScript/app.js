@@ -1,16 +1,16 @@
 "use strict";
-var msg = 'Hola mundo';
-var hero = {
+const msg = 'Hola mundo';
+const hero = {
     name: 'SpiderMan',
     age: 45
 };
 hero.age = 50;
 console.log(hero.age + 1);
 //Debemos declarar siempre que tipo de dato es
-var a = 10;
-var b = 10;
+const a = 10;
+let b = 10;
 //Sino declaramos será de tipo any
-var c;
+let c;
 c = 1;
 c = 'No tengo tipo de dato asignado ^^';
 b = 3.1416;
@@ -21,7 +21,7 @@ function sayHello(msg) {
 }
 //Al usar la función solo podemos usar strings
 console.log(sayHello('Holi'));
-(function () {
-    var d = 10;
+(() => {
+    const d = 10;
     console.log(a);
 })();
