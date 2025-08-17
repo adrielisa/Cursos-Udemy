@@ -3,7 +3,7 @@
     class Avenger {
         //private name: string; Las propiedades private solo son accesibles dentro de la misma clase
         //Las propiedades public son accesibles desde cualquier lugar, es la default
-         //Se pueden consumir accediendo a la clase, pertecencen a esta, no a las instancias
+        //Se pueden consumir accediendo a la clase, pertecencen a esta, no a las instancias
         //Las propiedades protected son accesibles desde la clase y sus subclases (protected)
         static avgAge: number = 35;
 
@@ -44,4 +44,6 @@
     console.log(antman)
     console.log(antman.bio())
     console.log(Avenger.getAvgAge)
+
+    
 })();
