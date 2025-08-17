@@ -3,7 +3,7 @@
         name: string;
         age?: number;
         address: Adress
-        
+        getFullAdress(id: string): string
     }
 
     interface Adress {
@@ -19,6 +19,9 @@
             id: 125,
             zip: '77511',
             city: 'Cancun'
+        },
+        getFullAdress(id: string){
+            return this.address.city;
         }
     }
 })();

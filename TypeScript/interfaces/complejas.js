@@ -7,6 +7,9 @@
             id: 125,
             zip: '77511',
             city: 'Cancun'
+        },
+        getFullAdress(id) {
+            return this.address.city;
         }
     };
 })();
